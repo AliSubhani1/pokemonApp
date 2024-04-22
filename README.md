@@ -1,46 +1,35 @@
-# Getting Started with Create React App
+## Initial Setup
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Clone the Repository or Download the Code:
 
-## Available Scripts
+- First, obtain a copy of the project code. You can do this by cloning the project repository using Git or by downloading the source code directly from the project's page.
 
-In the project directory, you can run:
+## Open Project Folder in Visual Studio Code:
 
-### `npm start`
+- Launch Visual Studio Code.
+- Navigate to File > Open Folder... and select the project folder you've just cloned or downloaded.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Install Dependencies:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- Open the integrated terminal in VS Code by navigating to Terminal > New Terminal.
+- Run the following command to install all the necessary dependencies listed in the package.json file:
 
-### `npm test`
+npm install
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Configure Environment Variables:
 
-### `npm run build`
+- Create a .env file in the root directory of the project. Add the value of the env variable. Currently, we only have one variable with following value (Just providing value to run the project. I know its not a secure way to share this detail in read me),
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+REACT_APP_API_BASE_URL=https://pokeapi.co/api/v2/
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Launch the Project:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Once all dependencies are installed and the .env file is configured, run the following command in the VS Code terminal to start the project:
 
-### `npm run eject`
+npm run start
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- This command launches a development server and opens the project in your default web browser.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Accessing the Project:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Open http://localhost:3000 in your browser to view the project
